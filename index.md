@@ -7,8 +7,6 @@ title: "Andrés Esquivel Díaz"
 
 <style>
 /* ====== Quick styles para mejorar visuales ====== */
-.card { transition: transform .15s ease; }
-.card:hover { transform: translateY(-3px); }
 
 .badges a img { margin-right: 6px; }
 .btn-row a {
@@ -57,17 +55,35 @@ Transformo datos en estrategias para mejorar la eficiencia y las decisiones de n
 ---
 
 ## Sobre mí
-Licenciado con certificación en **Análisis de Datos** y **13+ años** en hospitalidad (reservaciones y operaciones).  
-Me especializo en **EDA**, **visualización**, **A/B Testing** y **storytelling con datos** para potenciar decisiones y eficiencia.
+
+Soy **Licenciado con certificación en Análisis de Datos**, con una trayectoria de **13+ años liderando operaciones, análisis y optimización de procesos** en el sector hotelero de lujo.  
+Mi transición al mundo del análisis de datos surge del interés por **convertir la intuición operativa en decisiones respaldadas por evidencia**.
+
+Combino la experiencia práctica en eficiencia, liderazgo y servicio con habilidades técnicas en **Python, SQL, Excel y Tableau**, aplicadas en proyectos de **análisis exploratorio, pruebas A/B y visualización interactiva**.  
+Mi enfoque está en **transformar datos en estrategias accionables**, optimizar recursos y contar historias con datos que generen valor real para el negocio.
 
 ---
 
 ## Habilidades
-- Python (pandas, numpy, matplotlib, seaborn), SQL  
-- Visualización: Tableau, Plotly, Excel avanzado  
-- A/B Testing: scipy, statsmodels  
-- Entornos: Jupyter, Anaconda, Streamlit  
-- Git & GitHub · Documentación reproducible (README, requirements)
+
+**Lenguajes y herramientas técnicas**
+- 🐍 Python (pandas, numpy, matplotlib, seaborn, plotly)
+- 💾 SQL (consultas, joins, CTEs, KPIs desde bases relacionales)
+- 📊 Tableau, Power BI y Excel avanzado (dashboards, storytelling con datos)
+- 🧠 A/B Testing, análisis de hipótesis, estadística inferencial (scipy, statsmodels)
+- ⚙️ Git, GitHub, Jupyter Notebook, Anaconda, Streamlit
+
+**Competencias analíticas**
+- Exploratory Data Analysis (EDA) para detectar patrones y oportunidades  
+- Creación de reportes ejecutivos y métricas clave de negocio  
+- Limpieza, transformación y validación de datos  
+- Presentación de resultados con enfoque narrativo y visual
+
+**Soft skills**
+- Liderazgo y trabajo colaborativo  
+- Comunicación clara con equipos multidisciplinarios  
+- Atención al detalle, organización y pensamiento crítico
+
 
 ---
 
@@ -124,8 +140,25 @@ Me especializo en **EDA**, **visualización**, **A/B Testing** y **storytelling 
 
 ---
 
-## Experiencia breve
-Más de 13 años en **hospitalidad** (One&Only Palmilla), liderazgo de equipos, optimización de procesos y foco en experiencia cliente.
+## Experiencia
+
+### 🏨 Hospitalidad 
+**Operations & Reservations Manager | 2010–2023**
+
+- Dirigí equipos de hasta 20 colaboradores en operaciones y atención al cliente, garantizando **niveles de satisfacción superiores al 95%**.  
+- Implementé controles de desempeño y reportes que redujeron **tiempos operativos en un 30%**.  
+- Diseñé herramientas de seguimiento y análisis de KPIs para optimizar presupuestos y forecast de ocupación.  
+- Coordiné estrategias entre departamentos (Rooms, Sales, F&B) aplicando un enfoque **data-driven** para la toma de decisiones.
+
+### 🎯 Transición a Data Analytics (2023–Presente)
+- Formación intensiva en **Python, SQL, estadística y visualización de datos** (TripleTen Bootcamp).  
+- Desarrollo de proyectos aplicados como:
+  - **Telecom Inefficiency Analysis:** detección de operadores ineficientes mediante análisis exploratorio.  
+  - **AB Test App Typography:** evaluación del impacto visual en el embudo de conversión.  
+  - **Aplicación de Análisis de Vehículos Usados:** app interactiva para explorar tendencias del mercado automotriz.
+
+🚀 Actualmente enfocado en combinar mi **visión operativa estratégica** con el **análisis de datos**, para mejorar procesos, optimizar recursos y aportar valor analítico a decisiones de negocio.
+
 
 ---
 
