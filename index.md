@@ -7,6 +7,9 @@ title: "Andrés Esquivel Díaz"
 
 <style>
 /* ====== Quick styles para mejorar visuales ====== */
+.card { transition: transform .15s ease; }
+.card:hover { transform: translateY(-3px); }
+
 .badges a img { margin-right: 6px; }
 .btn-row a {
   display:inline-block; padding:10px 14px; margin:4px 6px; border-radius:8px;
