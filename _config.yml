@@ -1,0 +1,11 @@
+title: "Andrés Esquivel Díaz"
+description: "Data Analyst | Python · SQL · Tableau"
+theme: jekyll-theme-cayman
+
+# Opcional: personalización
+github_username: aesquivel91
+linkedin_url: "https://www.linkedin.com/in/andres-esquivel-diaz-08691337/"
+email: "andresesquiveldata@gmail.com"
+
+plugins:
+  - jekyll-seo-tag
