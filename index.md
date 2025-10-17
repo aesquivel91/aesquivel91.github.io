@@ -1,3 +1,5 @@
+<link rel="icon" href="assets/img/favicon.png">
+
 ---
 layout: default
 title: "Andrés Esquivel Díaz"
