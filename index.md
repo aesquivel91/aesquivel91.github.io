@@ -4,41 +4,162 @@ title: "Andrés Esquivel Díaz"
 ---
 
 <style>
-/* ====== Estilo rápido y limpio para galería tipo malegoma ====== */
-:root{
-  --bg:#f7fafc; --ink:#0f172a; --muted:#64748b; --brand:#0ea5e9; --brand-2:#0284c7;
-  --card:#ffffff; --shadow:0 1px 8px rgba(0,0,0,.08);
+/* ====== Estilo profesional neutro y azul ====== */
+:root {
+  --bg: #f8fafc;
+  --ink: #0f172a;
+  --muted: #475569;
+  --brand: #1e3a8a;       /* Azul oscuro profesional */
+  --brand-light: #3b82f6; /* Azul brillante */
+  --card: #ffffff;
+  --shadow: 0 1px 8px rgba(0,0,0,.08);
 }
-*{box-sizing:border-box;}
-body{background:var(--bg); color:var(--ink);}
-h1,h2,h3{margin:.2rem 0 1rem;}
-.container{max-width:1000px; margin:0 auto; padding:1rem;}
-.hero{text-align:center; padding:2.5rem 1rem 1rem;}
-.hero h1{font-size:2.2rem;}
-.hero p{color:var(--muted);}
-.btn-row a{
-  display:inline-block; padding:.6rem 1rem; margin:.25rem .35rem;
-  border-radius:10px; text-decoration:none; font-weight:700;
-  background:var(--brand); color:#fff;
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
 }
-.btn-row a:hover{background:var(--brand-2);}
-.section{margin:2.2rem 0;}
-.badges a img{margin-right:6px; vertical-align:middle;}
-.grid{display:grid; gap:18px; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));}
-.card{
-  background:var(--card); border-radius:14px; padding:16px; box-shadow:var(--shadow);
-  transition:transform .15s ease, box-shadow .15s ease;
+
+h1, h2, h3 {
+  margin: .5rem 0 1rem;
 }
-.card:hover{transform:translateY(-4px); box-shadow:0 10px 24px rgba(2,132,199,.18);}
-.thumb{width:100%; height:160px; object-fit:cover; border-radius:10px; border:1px solid #e5e7eb;}
-.small{color:var(--muted); font-size:.96rem; line-height:1.45;}
-.kpis{display:flex; gap:8px; flex-wrap:wrap; margin:.5rem 0 .2rem;}
-.kpi{background:#eef2f7; color:#334155; padding:4px 10px; border-radius:999px; font-size:.85rem;}
-.meta{display:flex; justify-content:space-between; align-items:center; margin-top:.6rem;}
-.meta .stack{font-size:.85rem; color:#475569;}
-.meta .links a{text-decoration:none; font-weight:700; color:var(--brand);}
-.meta .links a:hover{color:var(--brand-2);}
-footer{text-align:center; color:#94a3b8; margin:2rem 0 1rem;}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* === HERO SECTION === */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: linear-gradient(180deg, #e0f2fe 0%, #ffffff 100%);
+  border-bottom: 3px solid var(--brand-light);
+  border-radius: 0 0 20px 20px;
+}
+
+.hero img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 8px var(--brand-light);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--brand);
+  margin-bottom: .3rem;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-row a {
+  display: inline-block;
+  padding: .6rem 1.1rem;
+  margin: .3rem .35rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  background: var(--brand);
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn-row a:hover {
+  background: var(--brand-light);
+}
+
+/* === GRID & CARDS === */
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(30,58,138,.15);
+}
+
+.thumb {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.small {
+  color: var(--muted);
+  font-size: .96rem;
+  line-height: 1.45;
+}
+
+.kpis {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: .5rem 0 .2rem;
+}
+
+.kpi {
+  background: #e2e8f0;
+  color: #1e293b;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: .85rem;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .6rem;
+}
+
+.meta .stack {
+  font-size: .85rem;
+  color: #475569;
+}
+
+.meta .links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.meta .links a:hover {
+  color: var(--brand-light);
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  margin: 2.5rem 0 1rem;
+  font-size: .9rem;
+}
 </style>
 
 <div class="container hero">
