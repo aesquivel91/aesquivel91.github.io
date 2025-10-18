@@ -162,72 +162,47 @@ footer {
 }
 </style>
 
-<div class="container hero">
+<!-- ======== HEADER / HERO ======== -->
+<div class="hero">
+  <img src="assets/img/andy.jpg" alt="Foto de Andrés Esquivel Díaz">
   <h1>Andrés Esquivel Díaz</h1>
-  <p>Data Analyst — Python · SQL · Tableau · A/B Testing</p>
-  <div class="badges">
-    <a href="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
-      <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
-    </a>
-    <a href="https://img.shields.io/badge/SQL-316192?logo=postgresql&logoColor=white">
-      <img src="https://img.shields.io/badge/SQL-316192?logo=postgresql&logoColor=white" alt="SQL">
-    </a>
-    <a href="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white">
-      <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white" alt="Tableau">
-    </a>
-    <a href="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white">
-      <img src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white" alt="Jupyter">
-    </a>
-  </div>
+  <p>Data Analyst | Python · SQL · Tableau · A/B Testing</p>
   <div class="btn-row">
     <a href="https://www.linkedin.com/in/andres-esquivel-diaz-08691337/" target="_blank">LinkedIn</a>
     <a href="https://github.com/aesquivel91" target="_blank">GitHub</a>
-    <a href="mailto:a_esquivel_69@hotmail.com">Email</a>
+    <a href="mailto:andresesquiveldata@gmail.com">Email</a>
     <a href="#projects">Ver proyectos</a>
   </div>
 </div>
 
+<!-- ======== SOBRE MÍ ======== -->
 <div class="container">
   <h2>Sobre mí</h2>
   <p>
     Soy <strong>Licenciado con certificación en Análisis de Datos</strong>, con una trayectoria de
-    <strong>13+ años liderando operaciones, análisis y optimización de procesos</strong> en el sector hotelero de lujo.
-    Mi transición al mundo del análisis de datos surge del interés por
-    <strong>convertir la intuición operativa en decisiones respaldadas por evidencia</strong>.
+    <strong>13+ años liderando operaciones, análisis y optimización de procesos</strong> en la industria hotelera de lujo.
+    Mi transición al mundo de los datos nace del deseo de <strong>transformar la experiencia operativa en inteligencia analítica</strong>.
   </p>
   <p>
-    Combino la experiencia práctica en eficiencia, liderazgo y servicio con habilidades técnicas en
-    <strong>Python, SQL, Excel y Tableau</strong>, aplicadas en proyectos de
-    <strong>análisis exploratorio, pruebas A/B y visualización interactiva</strong>.
-    Mi enfoque está en <strong>transformar datos en estrategias accionables</strong>, optimizar recursos y contar
-    historias con datos que generen valor real para el negocio.
+    Combino habilidades técnicas en <strong>Python, SQL, Excel y Tableau</strong> con un enfoque estratégico orientado a la eficiencia.
+    Me apasiona contar historias con datos, descubrir oportunidades de mejora y respaldar decisiones con evidencia cuantitativa.
   </p>
+</div>
 
+<!-- ======== HABILIDADES ======== -->
+<div class="container">
   <h2>Habilidades</h2>
-  <h3>Lenguajes y herramientas técnicas</h3>
   <ul>
-    <li>🐍 Python (pandas, numpy, matplotlib, seaborn, plotly)</li>
-    <li>💾 SQL (consultas, joins, CTEs, KPIs desde bases relacionales)</li>
-    <li>📊 Tableau, Power BI y Excel avanzado (dashboards, storytelling con datos)</li>
-    <li>🧠 A/B Testing, análisis de hipótesis, estadística inferencial (scipy, statsmodels)</li>
-    <li>⚙️ Git, GitHub, Jupyter Notebook, Anaconda, Streamlit</li>
+    <li>🐍 <strong>Python</strong> (pandas, numpy, matplotlib, seaborn, plotly)</li>
+    <li>💾 <strong>SQL</strong> (joins, CTEs, KPIs, consultas optimizadas)</li>
+    <li>📊 <strong>Tableau / Power BI / Excel avanzado</strong> — dashboards e informes ejecutivos</li>
+    <li>🧠 <strong>A/B Testing y estadística</strong> (scipy, statsmodels)</li>
+    <li>⚙️ <strong>Git, GitHub, Jupyter Notebook, Streamlit</strong></li>
   </ul>
+</div>
 
-  <h3>Competencias analíticas</h3>
-  <ul>
-    <li>Exploratory Data Analysis (EDA) para detectar patrones y oportunidades</li>
-    <li>Creación de reportes ejecutivos y métricas clave de negocio</li>
-    <li>Limpieza, transformación y validación de datos</li>
-    <li>Presentación de resultados con enfoque narrativo y visual</li>
-  </ul>
-
-  <h3>Soft skills</h3>
-  <ul>
-    <li>Liderazgo y trabajo colaborativo</li>
-    <li>Comunicación clara con equipos multidisciplinarios</li>
-    <li>Atención al detalle, organización y pensamiento crítico</li>
-  </ul>
-
+<!-- ======== PROYECTOS ======== -->
+<div class="container">
   <h2 id="projects">Proyectos destacados</h2>
 
   <div class="grid">
@@ -240,15 +215,11 @@ footer {
         Reglas de enrutamiento y priorización para mejorar la calidad del servicio.
       </p>
       <div class="kpis">
-        <div class="kpi">EDA</div>
-        <div class="kpi">Hipótesis</div>
-        <div class="kpi">Visualización</div>
+        <div class="kpi">EDA</div><div class="kpi">Hipótesis</div><div class="kpi">Visualización</div>
       </div>
       <div class="meta">
         <span class="stack">Python · pandas · seaborn</span>
-        <span class="links">
-          <a href="https://github.com/aesquivel91/telecom-inefficiency-analysis" target="_blank">GitHub</a>
-        </span>
+        <span class="links"><a href="https://github.com/aesquivel91/telecom-inefficiency-analysis" target="_blank">GitHub</a></span>
       </div>
     </div>
 
@@ -261,36 +232,28 @@ footer {
         Resultados estables sin detrimento de métricas, con validación estadística.
       </p>
       <div class="kpis">
-        <div class="kpi">Embudo</div>
-        <div class="kpi">A/A/B</div>
-        <div class="kpi">Significancia</div>
+        <div class="kpi">Embudo</div><div class="kpi">A/B</div><div class="kpi">Significancia</div>
       </div>
       <div class="meta">
         <span class="stack">Python · scipy · statsmodels</span>
-        <span class="links">
-          <a href="https://github.com/aesquivel91/ab-test-app-typography" target="_blank">GitHub</a>
-        </span>
+        <span class="links"><a href="https://github.com/aesquivel91/ab-test-app-typography" target="_blank">GitHub</a></span>
       </div>
     </div>
 
-    <!-- 3) APP VEHÍCULOS -->
+    <!-- 3) VEHÍCULOS -->
     <div class="card">
-      <img class="thumb" src="assets/img/cars.png" alt="Used cars app">
+      <img class="thumb" src="assets/img/cars.png" alt="Vehículos usados">
       <h3>🚗 Aplicación Análisis de Vehículos Usados</h3>
       <p class="small">
-        App en Streamlit para explorar listados de autos usados en EE.UU.
-        Filtros por precio, año y marca para detectar patrones e insights de mercado.
+        App interactiva en Streamlit que permite explorar listados de autos usados en EE.UU.
+        Filtros por precio, año y marca para descubrir patrones de mercado.
       </p>
       <div class="kpis">
-        <div class="kpi">Streamlit</div>
-        <div class="kpi">EDA</div>
-        <div class="kpi">UI</div>
+        <div class="kpi">Streamlit</div><div class="kpi">EDA</div><div class="kpi">UI</div>
       </div>
       <div class="meta">
         <span class="stack">Python · Streamlit · pandas</span>
-        <span class="links">
-          <a href="https://github.com/aesquivel91/Aplicacion_Analisis_de_vehiculos_usados" target="_blank">GitHub</a>
-        </span>
+        <span class="links"><a href="https://github.com/aesquivel91/Aplicacion_Analisis_de_vehiculos_usados" target="_blank">GitHub</a></span>
       </div>
     </div>
 
@@ -299,42 +262,39 @@ footer {
       <img class="thumb" src="assets/img/ice.png" alt="ICE game sales">
       <h3>🎮 ICE — Análisis de Ventas de Videojuegos</h3>
       <p class="small">
-        Ventas globales por género/plataforma, reseñas y ESRB para detectar patrones de éxito.
+        Ventas globales por género y plataforma, reseñas y ESRB para detectar patrones de éxito.
         Recomendaciones de <em>mix</em> y segmentación regional.
       </p>
       <div class="kpis">
-        <div class="kpi">EDA</div>
-        <div class="kpi">Segmentación</div>
-        <div class="kpi">Insight de mercado</div>
+        <div class="kpi">EDA</div><div class="kpi">Segmentación</div><div class="kpi">Insights</div>
       </div>
       <div class="meta">
         <span class="stack">Python · pandas · plotly</span>
-        <span class="links">
-          <!-- Cambia el href cuando publiques el repo del ICE -->
-          <a href="#" title="Repo próximamente">GitHub</a>
-        </span>
+        <span class="links"><a href="#" title="Repo próximamente">GitHub</a></span>
       </div>
     </div>
   </div>
+</div>
 
+<!-- ======== EXPERIENCIA ======== -->
+<div class="container">
   <h2>Experiencia</h2>
 
   <h3>🏨 Hospitalidad</h3>
   <p><strong>Operations & Reservations Manager | 2010–2024</strong></p>
   <ul>
-    <li>Dirigí equipos de hasta 20 colaboradores en operaciones y atención al cliente, logrando <strong>95%+ de satisfacción</strong>.</li>
-    <li>Implementé reportes y controles que redujeron <strong>tiempos operativos en 30%</strong>.</li>
-    <li>Diseñé KPIs para optimizar presupuestos y forecast de ocupación.</li>
-    <li>Coordiné estrategias entre Rooms, Sales y F&amp;B con enfoque <strong>data-driven</strong>.</li>
+    <li>Dirigí equipos de hasta 20 colaboradores, logrando <strong>95%+ de satisfacción</strong>.</li>
+    <li>Implementé reportes que redujeron <strong>tiempos operativos en 30%</strong>.</li>
+    <li>Diseñé KPIs para forecast y control presupuestal.</li>
+    <li>Coordiné estrategias entre áreas con enfoque <strong>data-driven</strong>.</li>
   </ul>
 
   <h3>🎯 Transición a Data Analytics (2025–Presente)</h3>
   <ul>
-    <li>Formación intensiva en <strong>Python, SQL, estadística y visualización</strong> (TripleTen).</li>
-    <li>Proyectos: <em>Telecom Inefficiency Analysis</em>, <em>AB Test App Typography</em>,
-      <em>Aplicación de Análisis de Vehículos Usados</em>.</li>
+    <li>Formación intensiva en <strong>Python, SQL, estadística y visualización</strong> (TripleTen Bootcamp).</li>
+    <li>Desarrollo de proyectos: <em>Telecom Inefficiency</em>, <em>AB Test Typography</em>, <em>Vehículos Usados</em>.</li>
   </ul>
-
-  <hr>
-  <footer>© 2025 Andrés Esquivel Díaz · Hecho con GitHub Pages</footer>
 </div>
+
+<footer>© 2025 Andrés Esquivel Díaz · Hecho con GitHub Pages</footer>
+
