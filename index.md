@@ -74,6 +74,7 @@ title: "Andrés Esquivel Díaz"
     <a href="https://github.com/aesquivel91" target="_blank">GitHub</a>
     <a href="mailto:a_esquivel_69@hotmail.com">Email</a>
     <a href="#projects">Ver proyectos</a>
+    </div>
 </div>
 
 
