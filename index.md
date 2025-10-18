@@ -112,7 +112,6 @@ title: "Andrés Esquivel Díaz"
   <div class="grid">
     <!-- 1) TELECOM -->
     <div class="card">
-      <img class="thumb" src="assets/img/telecom.png" alt="Telecom">
       <h3>📞 Telecom Inefficiency Analysis</h3>
       <p class="small">
         Detección de ineficiencias y <em>missed calls</em> por operador y routing.
@@ -129,7 +128,6 @@ title: "Andrés Esquivel Díaz"
 
     <!-- 2) A/B TYPOGRAPHY -->
     <div class="card">
-      <img class="thumb" src="assets/img/abtest.png" alt="A/B Typography">
       <h3>🅰️🅱️ AB Test — App Typography</h3>
       <p class="small">
         Test A/A/B para evaluar el impacto tipográfico en el embudo de conversión.
@@ -146,7 +144,6 @@ title: "Andrés Esquivel Díaz"
 
     <!-- 3) VEHÍCULOS -->
     <div class="card">
-      <img class="thumb" src="assets/img/cars.png" alt="Vehículos usados">
       <h3>🚗 Aplicación Análisis de Vehículos Usados</h3>
       <p class="small">
         App interactiva en Streamlit que permite explorar listados de autos usados en EE.UU.
@@ -163,7 +160,6 @@ title: "Andrés Esquivel Díaz"
 
     <!-- 4) ICE -->
     <div class="card">
-      <img class="thumb" src="assets/img/ice.png" alt="ICE game sales">
       <h3>🎮 ICE — Análisis de Ventas de Videojuegos</h3>
       <p class="small">
         Ventas globales por género y plataforma, reseñas y ESRB para detectar patrones de éxito.
