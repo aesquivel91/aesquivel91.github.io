@@ -84,7 +84,7 @@ footer { text-align:center; color:#94a3b8; margin:2.2rem 0 1rem; }
   <div class="btns">
     <a href="https://www.linkedin.com/in/andres-esquivel-diaz-08691337/" target="_blank">LinkedIn</a>
     <a href="https://github.com/aesquivel91" target="_blank">GitHub</a>
-    <a href="mailto:andresesquiveldata@gmail.com">Email</a>
+    <a href="mailto:a_esquivel_69@hotmail.com">Email</a>
     <a href="#projects">Ver proyectos</a>
   </div>
 </div>
