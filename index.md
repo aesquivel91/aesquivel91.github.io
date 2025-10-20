@@ -123,31 +123,36 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
     • Distribución bimodal: muchos operadores cerca de 0.0 y otro grupo en 0.5.<br>
     • El pico en 0.5 está fuertemente asociado a “Unassigned” (llamadas sin operador).<br>
     <em>Interpretación:</em> conviven operadores con buen desempeño y un bloque afectado por problemas de asignación/enrutamiento.<br>
-    <em>(agregar imagen KPI1.png)</em></p>
+        <div class="imgbox"><img src="assets/img/KPI1.png" alt="Histograma de missed rate"></div>
+
 
     <p><strong>2) Histograma de avg_wait_time (cap a 600 s)</strong><br>
     • Distribución sesgada a la derecha: la masa central está entre 20–120 s.<br>
     • Hay cola larga (≥300–600 s), indicador de ineficiencias puntuales y picos de carga.<br>
     <em>Implicación:</em> fijar SLA (p. ej., 80% &lt; 30 s) y alertas para operadores con &gt; 60 s sostenidos.<br>
-    <em>(agregar imagen KPI2.png)</em></p>
+        <div class="imgbox"><img src="assets/img/KPI2.png" alt="Histograma de avg_wait_time"></div>
+
 
     <p><strong>3) Histograma de out_calls (escala log)</strong><br>
     • Alta concentración en valores bajos (0–200) y pocos outliers muy altos.<br>
     • Sugiere roles distintos: gran parte casi no realiza outbound; unos pocos concentran campañas.<br>
     <em>Implicación:</em> documentar roles/expectativas y usar KPIs normalizados por tiempo/turno (p. ej., out_calls/día activo).<br>
-    <em>(agregar imagen KPI3.png)</em></p>
+        <div class="imgbox"><img src="assets/img/KPI3.png" alt="Histograma de out_calls"></div>
+
 
     <p><strong>4) Dispersión missed_rate vs avg_wait_time</strong><br>
     • Dos bandas (≈0.0 y ≈0.5) y correlación débil e inversa.<br>
     • Un alto missed_rate no implica mayor espera: hay misses “rápidos” por abandono o enrutamiento.<br>
     <em>Implicación:</em> priorizar mejoras de enrutamiento y cobertura en picos antes de atribuirlo al desempeño individual.<br>
-    <em>(agregar imagen KPI4.png)</em></p>
+        <div class="imgbox"><img src="assets/img/KPI4.png" alt="Dispersión missed_rate vs avg_wait_time"></div>
+
 
     <p><strong>5) Boxplot de out_calls por plan (A/B/C)</strong><br>
     • Medianas bajas con gran dispersión (ceros y outliers).<br>
     • Consistente con el análisis: Plan A &gt; Plan B en outbound; Plan C es heterogéneo.<br>
     <em>Implicación:</em> ajustar objetivos outbound por plan/rol, evitando comparaciones directas sin contexto.<br>
-    <em>(agregar imagen KPI5.png)</em></p>
+        <div class="imgbox"><img src="assets/img/KPI5.png" alt="Boxplot de out_calls por plan"></div>
+
 
     <h4>Inefficiency Score</h4>
     <ul>
@@ -177,7 +182,8 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
     • <em>H1 — Missed rate vs. tiempo de espera</em><br>
     ρ = -0.132, p = 0.0058 → correlación significativa, débil e inversa.<br>
     <em>Interpretación:</em> más llamadas perdidas no implica esperas más largas; muchos “misses” parecen abandonos rápidos o fallas de enrutamiento.<br>
-    <em>(Se agrega imagen H1.png)</em></p>
+        <div class="imgbox"><img src="assets/img/H1.png" alt="Missed rate vs Tiempo de espera"></div>
+
 
     <p><strong>H2:</strong> Operadores asignados a clientes con tarifa B realizan menos llamadas salientes que los de tarifa A.<br>
     • <em>Prueba:</em> Mann–Whitney U (dos colas, no paramétrica) sobre out_calls entre grupos A vs. B<br>
@@ -185,7 +191,8 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
     • <em>H2 — Outbound en Plan A vs. Plan B</em><br>
     p = 0.0005 → diferencia significativa.<br>
     <em>Conclusión:</em> operadores en Plan A realizan más llamadas salientes que en Plan B.<br>
-    <em>(Se agrega imagen H2.png)</em></p>
+        <div class="imgbox"><img src="assets/img/H2.png" alt="Plan A vs Plan B outbound"></div>
+
 
     <p><strong>H3:</strong> El rendimiento de operadores difiere significativamente entre llamadas internas y externas (tiempo de espera).<br>
     • <em>Prueba:</em> Kruskal–Wallis (no paramétrica) sobre wait_time en entrantes internas vs. Externas<br>
@@ -193,7 +200,8 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
     • <em>H3 — Internas vs. externas (wait time)</em><br>
     p &lt; 0.0001 → diferencia significativa.<br>
     <em>Conclusión:</em> las llamadas externas presentan mayores tiempos de espera que las internas.<br>
-    <em>(Se agrega imagen H3.png)</em></p>
+        <div class="imgbox"><img src="assets/img/H3.png" alt="Internas vs Externas wait time"></div>
+
 
     <h4>Hallazgos clave:</h4>
     <ol>
@@ -250,7 +258,8 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
       <li>Promedio de eventos por usuario: 32.33</li>
       <li>Rango de fechas: 2019-07-25 a 2019-08-07</li>
     </ul>
-    <p><em>(agregar imagen AB1.png)</em></p>
+        <div class="imgbox"><img src="assets/img/AB1.png" alt="Distribución temporal de eventos"></div>
+
 
     <h4>Completitud de los datos</h4>
     <p>Al analizar el histograma de eventos por fecha, se observa un cambio brusco a partir del 1 de agosto de 2019, donde el volumen de eventos supera los 10,000 diarios de forma consistente. Esto indica que los datos antes de esta fecha podrían estar incompletos o corresponder a pruebas. Por lo tanto, se considera como punto de partida confiable el 1 de agosto de 2019.</p>
@@ -279,7 +288,8 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
       <li>PaymentScreenSuccessful – pago exitoso</li>
     </ol>
     <p>Se calcula cuántos usuarios llegan a cada etapa y la conversión entre cada paso. Esto permite identificar en qué momento se pierden más usuarios.</p>
-    <p><em>(agregar imagen grafico1.png)</em></p>
+        <div class="imgbox"><img src="assets/img/grafico1.png" alt="Embudo de conversión de usuarios"></div>
+
 
     <h4>Análisis del embudo de conversión</h4>
     <table>
@@ -309,7 +319,8 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
       </tbody>
     </table>
     <p><strong>Conclusión:</strong> No se detectaron diferencias estadísticamente significativas (todos los valores p &gt; 0.05) entre el grupo experimental y los grupos de control combinados.</p>
-    <p><em>(agregar imagen grafico2.png)</em></p>
+        <div class="imgbox"><img src="assets/img/grafico2.png" alt="Comparativa de grupos experimentales"></div>
+
 
     <h4>Visualización comparativa de comportamiento por grupo experimental</h4>
     <p>El gráfico anterior muestra la proporción de usuarios que realizaron cada uno de los eventos clave, separados por grupo experimental:</p>
@@ -379,20 +390,24 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
     </ul>
 
     <h4>Analísis de datos:</h4>
-    <p><em>(agregar imagen game1.png)</em></p>
+        <div class="imgbox"><img src="assets/img/game1.png" alt="Evolución histórica de lanzamientos"></div>
+
     <ul>
       <li>Observamos un fuerte crecimiento desde mediados de los 90s hasta un pico alrededor de 2008-2011.</li>
       <li>Desde 2012, la cantidad de lanzamientos parece disminuir.</li>
       <li>Los datos de 2016 pueden estar incompletos, por lo que el análisis predictivo se debería basar en datos hasta 2015.</li>
     </ul>
 
-    <p><em>(agregar imagen ICE1.png, ICE2.png)</em></p>
+        <div class="imgbox"><img src="assets/img/ICE1.png" alt="Ventas por plataforma histórica"></div>
+        <div class="imgbox"><img src="assets/img/ICE2.png" alt="Ventas por plataforma actual"></div>
+
     <ul>
       <li>Las plataformas con mayores ventas históricas son PS2, X360, PS3, Wii y DS.</li>
       <li>Algunas plataformas ya están obsoletas en 2016; el segundo gráfico muestra lo más vendible en el mercado actual.</li>
     </ul>
 
-    <p><em>(agregar imagen ICE3.png)</em></p>
+        <div class="imgbox"><img src="assets/img/ICE3.png" alt="Distribución de ventas por género"></div>
+
     <ul>
       <li>PS4 y XOne dominan claramente el mercado reciente, con ventas muy superiores a otras plataformas. <br>Estas deben ser el foco principal de campañas publicitarias y lanzamientos nuevos.</li>
       <li>3DS y WiiU mantienen una base de usuarios activa, especialmente en mercados como Japón (3DS). <br>Potenciales para nichos específicos o juegos portátiles.</li>
@@ -402,14 +417,16 @@ footer{text-align:center;color:#94a3b8;margin:2.5rem 0 1rem;}
       <li>Otras plataformas clásicas (DS, PSP, GB, etc.) prácticamente no tienen ventas desde 2013. <br>Estas pueden eliminarse completamente del análisis estratégico para 2017.</li>
     </ul>
 
-    <p><em>(agregar imagen game2.png)</em></p>
+        <div class="imgbox"><img src="assets/img/game2.png" alt="Distribución de ventas por juego"></div>
+
     <ul>
       <li>La mayoría de los juegos tienen ventas bajas (&lt;1 millón), pero hay muchos títulos con ventas extremadamente altas.</li>
       <li>Plataformas como Wii, PS2 y DS tuvieron juegos exitosos con ventas excepcionales.</li>
       <li>La dispersión sugiere que algunas plataformas producen grandes éxitos, pero la mayoría de los juegos tienen ventas modestas.</li>
     </ul>
 
-    <p><em>(agregar imagen game3.png)</em></p>
+        <div class="imgbox"><img src="assets/img/game3.png" alt="Géneros más rentables"></div>
+
     <ul>
       <li>Los géneros más rentables son Action, Sports, y Shooter, tanto por volumen como por total de ventas.</li>
       <li>Sin embargo, algunos géneros como Platform o Role-Playing también tienen grandes éxitos a pesar de menor cantidad de juegos.</li>
